@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giani Sher Singh Ji Khata</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Bai Vaara</h1>
+      <table cellspacing="0" cellpadding="4" width="100%" bgcolor="CCC9BF">
+        <script>
+          const pdfs = [
+            "1)SriRaagKiVaarMahala4.pdf",
+            "2)VaarMaajhKiMahala1.pdf",
+            "3)GoauriKiVaarMahala4.pdf",
+            "4)GoauriKiVaarMahala5.pdf",
+            "5)AsaVaarMahala1.pdf",
+            "6)GoojriKiVaarMahala3.pdf",
+            "7)GoojriKiVaarMahala5.pdf",
+            "8)BihagraKiVaarMahala4.pdf",
+            "9)VidhansKiVaarMahala4.pdf",
+            "10)SorathKiVaarMahala4.pdf",
+            "11)JaitsriKiVaarMahala5.pdf",
+            "12)SoohiKIVaarMahala3.pdf",
+            "13)BilvalKiVaarMahala4.pdf",
+            "14)RamkaliKiVaarMahala3.pdf",
+            "15)RamkaliKiVaarMahala5.pdf",
+            "16)RamkaliKiVaarRaiSattaBalvand.pdf",
+            "17)MarooKiVaar-Mahala3.pdf",
+            "18)MarooKiVaar-Mahala5Dakhne.pdf",
+            "19)BasantKiVaarMahala5.pdf",
+            "20)SarangKiVaarMahala4.pdf",
+            "21)MalaarKiVaarMahala1.pdf",
+            "22)KanreKiVaarMahala4.pdf",
+          ];
+
+          for (let i = 0; i < pdfs.length; i++) {
+            console.log(pdfs[i]);
+            document.write(
+              `
+                <tbody class="barRow">
+                    <tr>
+                      <td>
+                        <a href="../../pdfs/BaiVarra/${pdfs[i]}"
+                          ><img
+                            src="../../assets/pdf.gif"
+                            width="26"
+                            height="16"
+                            border="0"
+                            alt="folder"
+                        /></a>
+                      </td>
+                      <td>
+                        <a
+                          href="../../pdfs/BaiVarra/${pdfs[i]}"
+                          style="color: 0069c6"
+                        >
+                          <p style="size: 2; color: 0069c6">${pdfs[i]}</p>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+          `
+            );
+          }
+        </script>
+      </table>
+    </div>
+  </body>
+</html>

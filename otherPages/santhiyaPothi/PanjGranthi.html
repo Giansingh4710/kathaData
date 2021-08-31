@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giani Sher Singh Ji Khata</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Panj Granthi</h1>
+      <table cellspacing="0" cellpadding="4" width="100%" bgcolor="CCC9BF">
+        <script>
+          const pdfs = [
+            "AsaKiVaar.pdf",
+            "DakhniOankaar.pdf",
+            "GauriBavanAkahri.pdf",
+            "SidhGosth.pdf",
+            "SukhmaniSahib.pdf",
+          ];
+
+          for (let i = 0; i < pdfs.length; i++) {
+            console.log(pdfs[i]);
+            document.write(
+              `
+                <tbody class="barRow">
+                    <tr>
+                      <td>
+                        <a href="../../pdfs/PanjGranthi/${pdfs[i]}"
+                          ><img
+                            src="../../assets/pdf.gif"
+                            width="26"
+                            height="16"
+                            border="0"
+                            alt="folder"
+                        /></a>
+                      </td>
+                      <td>
+                        <a
+                          href="../../pdfs/PanjGranthi/${pdfs[i]}"
+                          style="color: 0069c6"
+                        >
+                          <p style="size: 2; color: 0069c6">${pdfs[i]}</p>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+          `
+            );
+          }
+        </script>
+      </table>
+    </div>
+  </body>
+</html>

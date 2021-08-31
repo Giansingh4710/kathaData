@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giani Sher Singh Ji Khata</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Bhagat Bani</h1>
+      <table cellspacing="0" cellpadding="4" width="100%" bgcolor="CCC9BF">
+        <script>
+          const pdfs = [
+            "1)Sriraag.pdf",
+            "2)RaagGaurii.pdf",
+            "3)RaagAsa.pdf",
+            "4)RaagGoojri.pdf",
+            "5)RaagSorath.pdf",
+            "6)RaagDhanasri.pdf",
+            "7)RaagJaatsri.pdf",
+            "8)RaagTodi.pdf",
+            "9)RaagTilang.pdf",
+            "10)RaagSoohi.pdf",
+            "11)RaagBilawal.pdf",
+            "12)RaagGoand.pdf",
+            "13)RaagRaamkali.pdf",
+            "14)RaagMaliGoara.pdf",
+            "15)RaagMaroo.pdf",
+            "16)Raagkeydara.pdf",
+            "17)RaagBhaaro.pdf",
+            "18)RaagBasant.pdf",
+            "19)RaagSarang.pdf",
+            "20)RaagMalaar.pdf",
+            "21)RaagKaanra.pdf",
+            "22)RaagParbati.pdf",
+            "23)SalokBhagatKabirJioKi.pdf",
+            "24)SalokBhagatFareedJeeKi.pdf",
+          ];
+
+          for (let i = 0; i < pdfs.length; i++) {
+            console.log(pdfs[i]);
+            document.write(
+              `
+                <tbody class="barRow">
+                    <tr>
+                      <td>
+                        <a href="../../pdfs/BhagatBani/${pdfs[i]}"
+                          ><img
+                            src="../../assets/pdf.gif"
+                            width="26"
+                            height="16"
+                            border="0"
+                            alt="folder"
+                        /></a>
+                      </td>
+                      <td>
+                        <a
+                          href="../../pdfs/BhagatBani/${pdfs[i]}"
+                          style="color: 0069c6"
+                        >
+                          <p style="size: 2; color: 0069c6">${pdfs[i]}</p>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+          `
+            );
+          }
+        </script>
+      </table>
+    </div>
+  </body>
+</html>

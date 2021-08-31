@@ -1,0 +1,11 @@
+body {
+  background-color: #7cb9e8;
+}
+
+h1 {
+  color: #0000ee;
+}
+.barRow {
+  flex-direction: column;
+  flex: 1;
+}
